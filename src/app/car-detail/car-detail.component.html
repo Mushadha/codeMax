@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="detail-header ml-5 mt-5">
+    <h3>
+      {{ selectedCar?.name }}-<span>{{ selectedCar?.model }}</span>
+    </h3>
+    <div class="right-side">
+      <button (click)="counter()">
+        <i class="fa-solid fa-plus mr-5"></i>
+        Wish list
+      </button>
+      <button (click)="viewInsurance()">Insurance Available</button>
+    </div>
+  </div>
+
+  <img src="{{ selectedCar?.image }}" alt="" />
+  <!-- <h1>{{ selectedCar?.name }}</h1>
+  <h1>{{ selectedCar?.id }}</h1> -->
+</div>
+<app-insurance-list *ngIf="insuranceView"></app-insurance-list>

@@ -1,0 +1,28 @@
+<h3>Insurance</h3>
+<div class="table-responsive tb-pad">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>SL No</th>
+        <th>Name</th>
+        <th>Premium</th>
+        <th>Discount</th>
+
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let insurance of insuranceList">
+        <td>{{ insurance.id }}</td>
+        <td>{{ insurance.name }}</td>
+        <td>{{ insurance.premium }}</td>
+        <td>{{ insurance.discount }}</td>
+        <td>
+          <a class="action-btn" title="View" (click)="book(insurance?.id)"
+            ><button>Get quote</button></a
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

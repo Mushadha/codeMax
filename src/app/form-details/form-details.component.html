@@ -1,0 +1,60 @@
+<div class="form-container card-body tb-pad">
+  <form [formGroup]="formDetails">
+    <div class="row app-form-row-mb">
+      <!-- car name -->
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 pb-4">
+        <label class="app-input-label" for="car_name"
+          >Car<span class="mdr-label">&nbsp;*</span></label
+        >
+        <input
+          type="text "
+          class="form-control app-input-field"
+          formControlName="car_name"
+        />
+      </div>
+      <!-- car model number -->
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 pb-4">
+        <label class="app-input-label" for="car_model"
+          >Car Model Number<span class="mdr-label">&nbsp;*</span></label
+        >
+        <input
+          type="text "
+          class="form-control app-input-field"
+          formControlName="car_model"
+        />
+      </div>
+      <!-- insu_name -->
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 pb-4">
+        <label class="app-input-label" for="insu_name"
+          >Insurance Name<span class="mdr-label">&nbsp;*</span></label
+        >
+        <input
+          type="text "
+          class="form-control app-input-field"
+          formControlName="insu_name"
+        />
+      </div>
+      <!-- insu_premium -->
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3 pb-4">
+        <label class="app-input-label" for="insu_premium"
+          >Insurance Premium<span class="mdr-label">&nbsp;*</span></label
+        >
+        <input
+          type="text "
+          class="form-control app-input-field"
+          formControlName="insu_premium"
+        />
+      </div>
+    </div>
+
+    <div class="row app-btn-row-wrapper">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary" type="reset" (click)="onSubmit()">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

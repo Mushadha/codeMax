@@ -1,0 +1,42 @@
+.card{
+    /* border: 1px solid yellow; */
+    height: 90vh;
+    margin: 10px;
+}
+img{
+    height:90%;
+    /* position: relative; */
+/* z-index: 1; */
+    /* overflow: hidden; */
+}
+/* h5{
+    z-index: 2;
+    margin-top: -150px;
+} */
+button{
+    /* margin-top: -50px; */
+    /* z-index: 2; */
+    width: max-content;
+    margin-left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.detail-header{
+/* border: 1px solid yellow; */
+display: flex;
+align-items: center;
+    height: 2rem;
+    justify-content: space-between;
+}
+.detail-header h3{
+    padding-left: 20px;
+}
+.right-side{
+   
+    display: flex;
+    /* align-items: right; */
+    margin-right: 10px;
+   
+  }

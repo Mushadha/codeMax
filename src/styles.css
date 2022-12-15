@@ -1,0 +1,19 @@
+
+/* You can add global styles to this file, and also import other style files */
+*{
+  box-sizing: border-box;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(244, 240, 240);
+    padding: 1rem 1rem;
+  
+   
+  }
+  .card-body {
+    padding: 30px 45px;
+    border: none;
+  }

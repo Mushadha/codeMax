@@ -1,0 +1,45 @@
+<header class="header">
+  <div class="header_container">
+    <!-- logo -->
+    <div class="logo_info">
+      <img
+        class="account-logo"
+        src="../../../../assets/image/logo.png"
+        alt="logo"
+        routerLink=""
+        style="cursor: pointer"
+      />
+      <a routerLink="/fuel"> Fuel Vehicles </a>
+      <a routerLink="/electric"> Electric Vehicles</a>
+
+      <div class="search_field col-4 p-0">
+        <input
+          type="text"
+          placeholder="Search by type, year"
+          [(ngModel)]="search"
+          (keyup.enter)="searchCar()"
+          [ngModelOptions]="{ standalone: true }"
+        />
+        <img
+          src="https://demo.dashboardpack.com/sales-html/img/icon/icon_search.svg"
+          alt=""
+        />
+        <!-- <i class="fa-sharp fa-solid fa-magnifying-glass"></i> -->
+
+        <button *ngIf="search" class="clear-search" (click)="clearSearch()">
+          <em class="fa fa-times" aria-hidden="true"></em>
+        </button>
+      </div>
+    </div>
+
+    <!-- right side content -->
+    <div class="right-side">
+      <div>
+        <em class="fa fa-bell pr-5"></em> <span class="count">{{ count }}</span>
+      </div>
+      <div style="margin-left: 20px">
+        <em class="fa-solid fa-language"></em>
+      </div>
+    </div>
+  </div>
+</header>
